@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Huiswerkopdracht voor Les 25 van de NHA Cursus."
+    />
+    <meta
+      name="keywords"
+      content="NHA, Cursus, Les 25, Huiswerk, Opdracht, jQuery"
+    />
+    <meta name="author" content="Joseph Boosten" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript &amp; jQuery</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>JavaScript &amp; jQuery</h1>
+    </header>
+
+    <main>
+      <h2>Tekst veranderen met jQuery</h2>
+      <p>
+        Gebruik de onderstaande knop om de tekst in het paragraaf-element te
+        veranderen met behulp van jQuery.
+      </p>
+      <button id="jqKnop">Klik hier om de tekst te veranderen</button>
+      <p id="jqParagraaf">Dit is de originele tekst.</p>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Joseph Boosten</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#jqKnop").on("click", function () {
+          $("#jqParagraaf").text("De tekst is veranderd met jQuery!");
+        });
+      });
+    </script>
+  </body>
+</html>
